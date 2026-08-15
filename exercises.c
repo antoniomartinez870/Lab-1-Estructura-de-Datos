@@ -48,7 +48,6 @@ List* crea_lista() {
       *num = i;
       pushBack(L,num);
    }
-   }
    return L;
 }
 
