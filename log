@@ -70,3 +70,9 @@ exercises.c:64:11: error: assignment to ‘int’ from ‘int *’ makes integer
    64 |       *num=(int*)next(L);
       |           ^
 f0df457
+Sat Aug 15 09:48:39 PM UTC 2026: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  2|3
+total_score: 20/70
+82a17aa
