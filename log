@@ -140,3 +140,32 @@ exercises.c:94:11: error: unused variable ‘aux’ [-Werror=unused-variable]
       |           ^~~
 cc1: all warnings being treated as errors
 dd8e89c
+Sat Aug 15 11:40:17 PM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:96:12: error: ‘p3’ undeclared (first use in this function)
+   96 |       push(p3,top(P1));
+      |            ^~
+exercises.c:96:12: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:99:14: error: ‘P3’ undeclared (first use in this function); did you mean ‘P2’?
+   99 |    while(top(P3) != NULL){
+      |              ^~
+      |              P2
+exercises.c:101:22: error: expected ‘)’ before ‘;’ token
+  101 |       push(P1,top(P3);
+      |           ~          ^
+      |                      )
+exercises.c:102:15: error: expected ‘;’ before ‘}’ token
+  102 |       pop(P3);
+      |               ^
+      |               ;
+  103 |    }
+      |    ~           
+exercises.c:94:11: error: unused variable ‘aux’ [-Werror=unused-variable]
+   94 |    Stack* aux = create_stack();
+      |           ^~~
+cc1: all warnings being treated as errors
+948fa9a
