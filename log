@@ -57,3 +57,16 @@ exercises.c:63:11: error: assignment to ‘int’ from ‘int *’ makes integer
    63 |       suma+=num;
       |           ^~
 c550afc
+Sat Aug 15 09:47:40 PM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:63:11: error: assignment to ‘int’ from ‘int *’ makes integer from pointer without a cast [-Wint-conversion]
+   63 |       suma+=num;
+      |           ^~
+exercises.c:64:11: error: assignment to ‘int’ from ‘int *’ makes integer from pointer without a cast [-Wint-conversion]
+   64 |       *num=(int*)next(L);
+      |           ^
+f0df457
