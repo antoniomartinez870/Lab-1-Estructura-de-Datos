@@ -91,3 +91,14 @@ exercises.c:81:14: error: comparison between pointer and integer [-Werror]
       |              ^~
 cc1: all warnings being treated as errors
 cdfc15d
+Sat Aug 15 10:33:54 PM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘eliminaElementos’:
+exercises.c:79:4: error: unknown type name ‘ibt’; did you mean ‘int’?
+   79 |    ibt *num =(int*)first(L);
+      |    ^~~
+      |    int
+8a12b9a
