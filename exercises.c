@@ -76,7 +76,11 @@ posiciona en el elemento anterior.
 */
 
 void eliminaElementos(List*L, int elem){
-
+   ibt *num =(int*)first(L);
+   while (num != NULL){
+      if(num == elem) popCurrent(L); 
+      num = (int*)next(L);
+   }
 }
 
 /*

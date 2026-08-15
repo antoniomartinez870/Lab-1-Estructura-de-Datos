@@ -76,3 +76,18 @@ Sat Aug 15 09:48:39 PM UTC 2026:
  tests:  2|3
 total_score: 20/70
 82a17aa
+Sat Aug 15 10:33:21 PM UTC 2026: 
+ exercises.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘eliminaElementos’:
+exercises.c:79:4: error: unknown type name ‘ibt’; did you mean ‘int’?
+   79 |    ibt *num =(int*)first(L);
+      |    ^~~
+      |    int
+exercises.c:81:14: error: comparison between pointer and integer [-Werror]
+   81 |       if(num == elem) popCurrent(L);
+      |              ^~
+cc1: all warnings being treated as errors
+cdfc15d
