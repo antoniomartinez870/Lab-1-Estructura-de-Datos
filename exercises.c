@@ -114,29 +114,29 @@ int parentesisBalanceados(char *cadena) {
    Stack* pila = create_stack();
    int n = strlen(cadena);
    for(int i =0; i < n ; i++){
-      if(cadena[i]=="[" || cadena[i] == "{" || cadena[i]=="("){
+      if(cadena[i]=¨'[' || cadena[i] == '{' || cadena[i]=='('{
          push(pila, cadena[i]);
       }
-      if(cadena[i]== ")"){
+      if(cadena[i]== ')'){
          if(top(pila) != NULL){
             char ult = *(char*) top(pila);
-            if(ultimo=="("){
+            if(ultimo=='('{
                pop(pila);
             }else return 0;
          }else return 0;
       }
-      if(cadena[i]=="}"){
+      if(cadena[i]=='}'){
          if (top(pila) != NULL){
             char ult= *(char*) top(pila);
-            if(ultimo == "{"){
+            if(ultimo == '{'){
                pop(pila);
             }else return 0;
          }else return 0;
       }
-      if(cadena[i]=="]"){
+      if(cadena[i]==']'){
          if(top(pila)!= NULL){
             char ult= *(char*) top(pila);
-            if(ultimo== "["){
+            if(ultimo== '['){
                pop(pila);
             }else return 0
          }else return 0;
