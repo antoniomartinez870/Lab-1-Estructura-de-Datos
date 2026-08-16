@@ -192,3 +192,69 @@ Sat Aug 15 11:41:19 PM UTC 2026:
  tests:  4|1
 total_score: 50/70
 adb68ed
+Sun Aug 16 05:06:17 PM UTC 2026: 
+ exercises.c | 35 ++++++++++++++++++++++++++++++++++-
+ 1 file changed, 34 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:115:4: error: expected ‘,’ or ‘;’ before ‘int’
+  115 |    int n = strlen(cadena);
+      |    ^~~
+exercises.c:116:22: error: ‘n’ undeclared (first use in this function)
+  116 |    for(int i =0; i < n ; i++){
+      |                      ^
+exercises.c:116:22: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:117:19: error: comparison between pointer and integer [-Werror]
+  117 |       if(cadena[i]=="[" || cadena[i] == "{" || cadena[i]=="("){
+      |                   ^~
+exercises.c:117:19: error: comparison with string literal results in unspecified behavior [-Werror=address]
+exercises.c:117:38: error: comparison between pointer and integer [-Werror]
+  117 |       if(cadena[i]=="[" || cadena[i] == "{" || cadena[i]=="("){
+      |                                      ^~
+exercises.c:117:38: error: comparison with string literal results in unspecified behavior [-Werror=address]
+exercises.c:117:57: error: comparison between pointer and integer [-Werror]
+  117 |       if(cadena[i]=="[" || cadena[i] == "{" || cadena[i]=="("){
+      |                                                         ^~
+exercises.c:117:57: error: comparison with string literal results in unspecified behavior [-Werror=address]
+exercises.c:118:27: error: passing argument 2 of ‘push’ makes pointer from integer without a cast [-Wint-conversion]
+  118 |          push(pila, cadena[i]);
+      |                     ~~~~~~^~~
+      |                           |
+      |                           char
+In file included from exercises.c:7:
+stack.h:11:31: note: expected ‘void *’ but argument is of type ‘char’
+   11 | void push(Stack *stack, void *data) { pushFront(stack, data); }
+      |                         ~~~~~~^~~~
+exercises.c:120:19: error: comparison between pointer and integer [-Werror]
+  120 |       if(cadena[i]== ")"){
+      |                   ^~
+exercises.c:120:19: error: comparison with string literal results in unspecified behavior [-Werror=address]
+exercises.c:123:16: error: ‘ultimo’ undeclared (first use in this function)
+  123 |             if(ultimo=="("){
+      |                ^~~~~~
+exercises.c:122:18: error: unused variable ‘ult’ [-Werror=unused-variable]
+  122 |             char ult = *(char*) top(pila);
+      |                  ^~~
+exercises.c:128:19: error: comparison between pointer and integer [-Werror]
+  128 |       if(cadena[i]=="}"){
+      |                   ^~
+exercises.c:128:19: error: comparison with string literal results in unspecified behavior [-Werror=address]
+exercises.c:130:18: error: unused variable ‘ult’ [-Werror=unused-variable]
+  130 |             char ult= *(char*) top(pila);
+      |                  ^~~
+exercises.c:136:19: error: comparison between pointer and integer [-Werror]
+  136 |       if(cadena[i]=="]"){
+      |                   ^~
+exercises.c:136:19: error: comparison with string literal results in unspecified behavior [-Werror=address]
+exercises.c:141:27: error: expected ‘;’ before ‘}’ token
+  141 |             }else return 0
+      |                           ^
+      |                           ;
+  142 |          }else return 0;
+      |          ~                 
+exercises.c:138:18: error: unused variable ‘ult’ [-Werror=unused-variable]
+  138 |             char ult= *(char*) top(pila);
+      |                  ^~~
+cc1: all warnings being treated as errors
+e7ac811
