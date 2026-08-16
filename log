@@ -861,3 +861,14 @@ exercises.c:126:10: error: expected expression before ‘}’ token
       |          ^
 cc1: all warnings being treated as errors
 505cbba
+Sun Aug 16 05:15:04 PM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:117:10: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+  117 |       if(cadena[i]='[' || cadena[i] == '{' || cadena[i]=='('){
+      |          ^~~~~~
+cc1: all warnings being treated as errors
+985b297
