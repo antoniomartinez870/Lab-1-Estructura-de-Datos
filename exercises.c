@@ -138,7 +138,7 @@ int parentesisBalanceados(char *cadena) {
             char ult= *(char*) top(pila);
             if(ultimo== '['){
                pop(pila);
-            }else return 0
+            }else return 0;
          }else return 0;
       }
    }
