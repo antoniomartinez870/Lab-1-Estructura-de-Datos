@@ -776,3 +776,43 @@ arraylist.c:37:6: error: ‘pushFront’ defined but not used [-Werror=unused-fu
       |      ^~~~~~~~~
 cc1: all warnings being treated as errors
 eac6605
+Sun Aug 16 05:11:56 PM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:117:10: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+  117 |       if(cadena[i]='[' || cadena[i] == '{' || cadena[i]=='('){
+      |          ^~~~~~
+exercises.c:118:27: error: passing argument 2 of ‘push’ makes pointer from integer without a cast [-Wint-conversion]
+  118 |          push(pila, cadena[i]);
+      |                     ~~~~~~^~~
+      |                           |
+      |                           char
+In file included from exercises.c:7:
+stack.h:11:31: note: expected ‘void *’ but argument is of type ‘char’
+   11 | void push(Stack *stack, void *data) { pushFront(stack, data); }
+      |                         ~~~~~~^~~~
+exercises.c:123:16: error: ‘ultimo’ undeclared (first use in this function)
+  123 |             if(ultimo=='('{
+      |                ^~~~~~
+exercises.c:123:16: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:123:27: error: expected ‘)’ before ‘{’ token
+  123 |             if(ultimo=='('{
+      |               ~           ^
+      |                           )
+exercises.c:126:10: error: expected expression before ‘}’ token
+  126 |          }else return 0;
+      |          ^
+exercises.c:122:18: error: unused variable ‘ult’ [-Werror=unused-variable]
+  122 |             char ult = *(char*) top(pila);
+      |                  ^~~
+exercises.c:130:18: error: unused variable ‘ult’ [-Werror=unused-variable]
+  130 |             char ult= *(char*) top(pila);
+      |                  ^~~
+exercises.c:138:18: error: unused variable ‘ult’ [-Werror=unused-variable]
+  138 |             char ult= *(char*) top(pila);
+      |                  ^~~
+cc1: all warnings being treated as errors
+1c29b65
